@@ -5,17 +5,16 @@ import GridDashboard from "./components/gridDashboard/GridDashboard.js";
 import "./App.css";
 import { useState } from "react";
 
+
 function App() {
   const [tag, setTag] = useState("");
   const [fav, setFav] = useState([]);
 
   const selectTag = (tag) => {
-    console.log(tag);
     setTag(tag);
   };
 
   const pushFav = (pushfav) => {
-    console.log(pushfav);
     let random = fav;
     random.push(pushfav);
     setFav(random);

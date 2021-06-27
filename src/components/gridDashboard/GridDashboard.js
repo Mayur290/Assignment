@@ -18,10 +18,6 @@ function GridDashboard(props) {
     getAllData();
   }, []);
 
-  useEffect(() => {
-    console.log("tag is " + props.selectedTag);
-  });
-
   const getAllData = async () => {
     const headers = {
       "Content-Type": "application/json",
@@ -32,7 +28,6 @@ function GridDashboard(props) {
       "https://videoapi-dot-virtualeventdemo.el.r.appspot.com/",
       { headers }
     );
-    console.log(response.data.result);
     setGridDashboard(response.data.result);
   };
 
