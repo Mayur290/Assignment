@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  color: black;
+  padding: 5px 10px;
+  padding-left: 40px;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.toolbar {
+  display: flex;
+  overflow-x: scroll;
+  padding-left: 20px;
+}
+
+.toolbar::-webkit-scrollbar {
+  /*chrome, safari, opera*/
+  display: none;
+}
+
+.toolbar {
+  -ms-overflow-style: none; /* IE & edge*/
+  scrollbar-width: none; /*  firefox */
+}
+
+h2 {
+  margin-top: 8px;
+}
+
+.toolbar > h2 {
+  cursor: pointer;
+  margin: 0 15px;
+  font-weight: 300;
+  padding: 8px 24px;
+  border: 2px solid rgb(78, 132, 185);
+  border-radius: 10px;
+  transition: transform 50ms ease-out;
+}
+
+.toolbar > h2:hover {
+  transform: scale(1.09);
+  font-weight: 400;
+}

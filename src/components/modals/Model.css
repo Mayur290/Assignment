@@ -1,0 +1,34 @@
+.video_player > iframe {
+  object-fit: contain;
+  width: 99.4%;
+  height: 320px;
+}
+
+.video_details {
+  margin-left: 25px;
+}
+
+.video_details span {
+  cursor: pointer;
+  margin: 4px 8px 4px 0px;
+  font-weight: 300;
+  padding: 6px 20px;
+  color: rgb(78, 132, 185);
+  border: 2px solid rgb(144, 146, 146);
+  border-radius: 10px;
+}
+
+.video_details h2 {
+  color: rgb(0, 63, 126);
+  max-width: 70%;
+  margin-bottom: 12px;
+  font-weight: bolder;
+}
+
+.video_details p {
+  font-size: 0.8rem;
+  padding-top: 0.5rem;
+  margin-top: 8px;
+  max-width: 70%;
+  color: rgb(127, 128, 127);
+}

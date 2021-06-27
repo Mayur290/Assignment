@@ -1,0 +1,54 @@
+.videoCard {
+  position: relative;
+  color: white;
+  width: 300px;
+  margin: 10px;
+  transition: transform 100ms;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  padding: 40px 20px 0 0;
+  text-shadow: rgb(34, 34, 34) 0px 0px 10px;
+}
+
+.bottom-left > p {
+  font-size: 0.8rem;
+  padding-top: 0.5rem;
+}
+
+.top-right {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  text-shadow: rgb(34, 34, 34) 0px 0px 10px;
+}
+
+.top-right > img {
+  width: 20px;
+  transition: transform 100ms;
+}
+
+.top-right > img:hover {
+  transform: scale(1.2);
+}
+
+.videoCard:hover {
+  transform: scale(1.1);
+}
+
+.videoCard > img {
+  object-fit: contain;
+  width: 300px;
+  border-radius: 10px;
+}
+
+.videoCard_stats {
+  display: none;
+}
+
+.videoCard:hover .videoCard_stats {
+  display: inline-block;
+}
